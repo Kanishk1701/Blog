@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f7f3e9;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #8a4b08;
+    color: #fff;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0a458;
+}
+
+.section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#about {
+    background-color: #f1ede1;
+}
+
+#stories {
+    background-color: #ece4d4;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #8a4b08;
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    margin-bottom: 2rem;
+    font-family: 'Lora', serif;
+}
+
+.stories-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.story-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.story-item:hover {
+    transform: scale(1.05);
+}
+
+.story-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.story-item h2 {
+    margin-bottom: 1rem;
+    color: #8a4b08;
+    font-family: 'Merriweather', serif;
+}
+
+.story-item p {
+    margin-bottom: 1.5rem;
+    font-family: 'Lora', serif;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #8a4b08;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0a458;
+}
+
+footer {
+    background-color: #8a4b08;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .contact-info p {
+    margin-bottom: 1rem;
+}
+
+footer .resources a {
+    color: #e0a458;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .resources a:hover {
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    color: #8a4b08;
+}
+
+form input, form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+    background-color: #8a4b08;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e0a458;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stories-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+.story-button a {
+text-decoration: none;
+color: #fff;
+}
+.contact-info a{
+    color: #fff;
+    text-decoration: none;
+}
